@@ -15,9 +15,9 @@ printf("DESAFIO SUPER TRUNFO\n");
     
      int codigoCidade;
      char pais;
-     char codigoEstado[20];
-     char nomeCidade[100];
-     char nomeEstado[100];
+     char codigoEstado[2];
+     char nomeCidade[20];
+     char nomeEstado[20];
      float populacao;
      float areaTerritorial;
      float pib;
@@ -48,13 +48,23 @@ printf("DESAFIO SUPER TRUNFO\n");
      scanf("%f", &pib);
      printf("Número de Pontos Turísticos:\n");
      scanf("%d", &pontosTuristicos);
+    
+    
 
-
-
-
-    // Exibição dos Dados das Cartas:
+ // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+
+    printf("País 1:%s\n", pais);
+    printf("Estado 1:%s\n", nomeEstado);
+    printf("Código do Estado 1:%s\n", codigoEstado);
+    printf("Cidade 1:%s\n", nomeCidade);
+    printf("Código da Cidade 1:%d\n", codigoCidade);
+    printf("População existente:%f\n", populacao);
+    printf("Extensão Territorial:%f\n", areaTerritorial);
+    printf("PIB:%f\n", pib);
+    printf("Número de pontos turísticos:%d\n", pontosTuristicos);
     return 0;
 }
+
