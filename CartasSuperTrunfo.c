@@ -11,30 +11,45 @@ printf("DESAFIO SUPER TRUNFO\n");
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
-    int codigoCidade;
-     char nomeCidade[50];
-     double populacao;
-     double areaTerritorial;
-     double pib;
+
+    
+     int codigoCidade;
+     char pais;
+     char codigoEstado[20];
+     char nomeCidade[100];
+     char nomeEstado[100];
+     float populacao;
+     float areaTerritorial;
+     float pib;
+     int pontosTuristicos;
+
+
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-     printf("Digite o código da cidade:\n");
-     scanf("%d", &codigoCidade);
-     printf("O código da cidade é: %d\n", codigoCidade);
-    printf("Digite o nome da cidade:\n");
+     
+     
+     printf("Insira um País\n");
+     scanf("%s", &pais);
+     printf("Insira um Estado:\n");
+     scanf("%s", &nomeEstado);
+     printf("Escolha um código de A-H;\n");
+     scanf("%s", &codigoEstado);
+     printf("Insira uma cidade:\n");
      scanf("%s", &nomeCidade);
-     printf("O nome da cidade é: %s\n", nomeCidade);
-     printf("População residente:\n");
+     printf("Escolha um código de 1-4;\n");
+     scanf("%d", &codigoCidade);
+     printf("População existente:\n");
      scanf("%f", &populacao);
-     printf("O número da população é: %f\n", populacao);
      printf("Extensão Territórial:\n");
      scanf("%f", &areaTerritorial);
-     printf("A extensão territorial é: %f\n", areaTerritorial);
      printf("PIB:\n");
      scanf("%f", &pib);
-     printf("O PIB é: %f\n", pib);
+     printf("Número de Pontos Turísticos:\n");
+     scanf("%d", &pontosTuristicos);
+
+
 
 
     // Exibição dos Dados das Cartas:
